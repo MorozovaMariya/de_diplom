@@ -95,6 +95,6 @@ csv
 
 Пример карты:
 
-![Карта](https://github.com/MorozovaMariya/station/blob/master/img/map.png)
+![Карта](https://github.com/MorozovaMariya/de_diplom/blob/master/images_sat/map.png)
 
 

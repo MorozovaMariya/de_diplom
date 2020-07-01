@@ -3,6 +3,8 @@
 
 # "Потоковая обработка данных о движении ИСЗ"
 
+![МКС](https://github.com/MorozovaMariya/de_diplom/blob/master/images_sat/mks.jpg)
+
 * ИСЗ - искусственные спутники Земли
 
 ## Источники данных

@@ -8,14 +8,14 @@
 ## Источники данных.
 
 На сайте https://www.space-track.org/ представлены различные варианты датасетов с координатами передвижения спутников, например по видам орбит:
-<li>Средняя околоземная орбита (MEO)
-Низкая околоземная орбита (LEO)
-Высокоэллиптическая орбита (HEO)</li>
+<li>Средняя околоземная орбита (MEO)</li>
+<li>Низкая околоземная орбита (LEO)</li>
+<li>Высокоэллиптическая орбита (HEO)</li>
 
-*GEO: 0.99 <= Mean Motion <= 1.01 and Eccentricity < 0.01
-*MEO: 600 minutes <= Period <= 800 minutes and Eccentricity < 0.25
-*LEO: Mean Motion > 11.25 and Eccentricity < 0.25
-*HEO: Eccentricity > 0.25
+<li>GEO: 0.99 <= Mean Motion <= 1.01 and Eccentricity < 0.01</li>
+<li>MEO: 600 minutes <= Period <= 800 minutes and Eccentricity < 0.25</li>
+<li>LEO: Mean Motion > 11.25 and Eccentricity < 0.25</li>
+<li>HEO: Eccentricity > 0.25</li>
 
 
 
@@ -32,16 +32,11 @@
   
 Состав проекта:
 ---------------------------
-data_in
-  
+```data_in  
 data_out
-
 python
-
 image_out
-
-docker-compose.yml
-
+docker-compose.yml```
   
 satellite_list.csv - Список спутников, находящихся на LEO-орбите. Список взят с сайта 
   

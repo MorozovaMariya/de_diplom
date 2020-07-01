@@ -41,9 +41,9 @@ TLE (аббр. от англ. two-line element set, двухстрочный н�
 
 
 
-
 ## Архитектурная схема
 
+![Архитектура](https://github.com/MorozovaMariya/de_diplom/blob/master/images_sat/architectura.png)
 
 
 ## Развертывание и запуск проекта
@@ -51,12 +51,10 @@ TLE (аббр. от англ. two-line element set, двухстрочный н�
 1. Склонировать проект:
 
   ```git clone https://github.com/MorozovaMariya/de_diplom.git```
-  
-  
+   
 Состав проекта:
 ---------------------------
 ```
-
 data_in  
 python
 image_out

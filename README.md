@@ -54,28 +54,28 @@ TLE (аббр. от англ. two-line element set, двухстрочный н�
 Состав проекта:
 ---------------------------
 ```
+
 data_in  
-data_out
 python
 image_out
 image_sat
 docker-compose.yml
-```
+
   
 satellite_list.csv - Список спутников, находящихся на LEO-орбите. 
   
   
 2. Перейти в каталог проекта
 
-  ```cd /de_diplom/```
+  cd /de_diplom/
   
 3. запустить docker-контейнеры (для Kafka и Clickhouse):
 
-  ```sudo docker-compose up```
+  sudo docker-compose up
   
 2. Для запуска питоновских скриптов необходим установленный Python 3.5.2
   Список необходимых библиотек:
-```spacetrack
+spacetrack
 pyorbital
 configparser
 pandas

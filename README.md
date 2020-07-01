@@ -8,13 +8,9 @@
 ## Источники данных
 
 На сайте https://www.space-track.org/ представлены различные варианты датасетов с координатами передвижения спутников, например по видам орбит:
-<li>Средняя околоземная орбита (MEO)</li>
-<li>Низкая околоземная орбита (LEO)</li>
-<li>Высокоэллиптическая орбита (HEO)</li>
-
-<li>MEO: 600 minutes <= Period <= 800 minutes and Eccentricity < 0.25</li>
-<li>LEO: Mean Motion > 11.25 and Eccentricity < 0.25</li>
-<li>HEO: Eccentricity > 0.25</li>
+<li>Средняя околоземная орбита (MEO) (600 minutes <= Period <= 800 minutes and Eccentricity < 0.25)</li>
+<li>Низкая околоземная орбита (LEO) ( Mean Motion > 11.25 and Eccentricity < 0.25)</li>
+<li>Высокоэллиптическая орбита (HEO) (Eccentricity > 0.25) </li>
 
 Есть еще специальные орбиты захоронения - для вывода на них спутников, которые уже не могут быть использованы.
 

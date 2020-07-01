@@ -5,7 +5,7 @@
 
 from kafka import KafkaProducer
 from json import dumps
-
+import time
 from datetime import datetime, date, timedelta
 import spacetrack.operators as op
 from spacetrack import SpaceTrackClient
@@ -105,7 +105,7 @@ def create_orbital_track_for_day (sat_id, track_day, step_minutes, USERNAME, PAS
 utc_time = datetime.utcnow()
 
 # Получение списка низкоорбитальных ИСЗ (LEO)  15369 строк
-sat_list = pd.read_csv('./data_in/satellite_list.csv', sep=",")
+sat_list = pd.read_csv('../data_in/satellite_list.csv', sep=",")
 sat_list_id = sat_list['NORAD_CAT_ID']
 
 for sat_id in sat_list_id:

@@ -3,6 +3,7 @@ from datetime import datetime
 import time
 import pandas as pd
 import folium
+import re
 
 client = Client(host='localhost', port=9000)
 
@@ -24,7 +25,9 @@ def get_map_sat_id(sat_id_i, sat_name_i, sat_period_i):
     lon = data['lon']
     time = data['utctime']
 
-    loc = 'MAP for satellite "' + sat_name_i + '" on UTC ' + str(utc_time_now_str) + ' with period = ' + str(sat_period_i) + ' min'
+    reg = re.compile('[^a-zA-Z0-9() ]')
+    sat_name_i_good = reg.sub('', sat_name_i)
+    loc = 'MAP for satellite "' + sat_name_i + '" on UTC ' + str(utc_time_now_str) + ' with period = ' + str(int(sat_period_i)) + ' min'
     title_html = '''
              <h3 align="center" style="font-size:16px"><b>{}</b></h3>
              '''.format(loc)   
@@ -46,7 +49,7 @@ def get_map_sat_id(sat_id_i, sat_name_i, sat_period_i):
     ).add_to(map)  
  
     map.get_root().html.add_child(folium.Element(title_html))  
-    map.save('../image_out/' + sat_name_i + ".html")
+    map.save('../image_out/' + sat_name_i_good + ".html")
     display(map)
     return
 

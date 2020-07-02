@@ -47,7 +47,7 @@ ISS (ZARYA)
 
 ## Архитектурная схема
 
-![Архитектура](https://github.com/MorozovaMariya/de_diplom/blob/master/images_sat/architectura_600.png)
+![Архитектура](https://github.com/MorozovaMariya/de_diplom/blob/master/images_sat/architectura_800.png)
 
 
 ## Развертывание и запуск проекта
